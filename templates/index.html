@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+    <style>
+        /* Inline styles for demonstration; ideally, this should be in your CSS file */
+        a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit color from parent */
+        }
+
+        /* Optionally style the brand link */
+        .brand-link {
+            font-weight: bold;
+            color: #00796b; /* Change color as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to the Game Hub!</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('tic_tac_toe') }}">Tic Tac Toe</a></li>
+                    <li><a href="{{ url_for('memory_game') }}">Memory Game</a></li>
+                    <li><a href="{{ url_for('snake_game') }}">Snake Game</a></li>
+                    <li><a href="{{ url_for('pong_game') }}">Pong Game</a></li>
+                    <li><a href="{{ url_for('breakout_game') }}">Breakout Game</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Featured Games</h2>
+            <section class="game-grid">
+                <div class="game-card">
+                    <a href="{{ url_for('tic_tac_toe') }}">
+                        <img src="/static/images/game_thumnails/tic.jpg" alt="Tic Tac Toe">
+                        <h3>Tic Tac Toe</h3>
+                        <p>Challenge yourself in this classic game!</p>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="{{ url_for('memory_game') }}">
+                        <img src="/static/images/game_thumnails/memory_game.jpg" alt="Memory Game">
+                        <h3>Memory Game</h3>
+                        <p>Test your memory by matching pairs of cards!</p>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="{{ url_for('snake_game') }}">
+                        <img src="/static/images/game_thumnails/snake_game.jpg" alt="Snake Game">
+                        <h3>Snake Game</h3>
+                        <p>Control the snake and eat the food!</p>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="{{ url_for('pong_game') }}">
+                        <img src="/static/images/game_thumnails/pong_game.jpg" alt="Pong Game">
+                        <h3>Pong Game</h3>
+                        <p>Play the classic Pong game!</p>
+                    </a>
+                </div>
+                <div class="game-card">
+                    <a href="{{ url_for('breakout_game') }}">
+                        <img src="/static/images/game_thumnails/breakouT_GAME.jpg" alt="Breakout Game">
+                        <h3>Breakout Game</h3>
+                        <p>Break the bricks with your paddle!</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="upcoming-games">
+                <h2>Upcoming Advanced Games</h2>
+                <ul>
+                    <li>Adventure Quest - Release Date: January 2025</li>
+                    <li>Battle Arena - Release Date: February 2025</li>
+                    <li>Space Odyssey - Release Date: March 2025</li>
+                    <li>Fantasy Realm - Release Date: April 2025</li>
+                    <li>Cyberpunk City - Release Date: May 2025</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Game Hub. All rights reserved.</p>
+            <p>Follow us on social media!</p>
+            <p class="cmp"><a href="https://zuberkhan-portfolio.netlify.app/">Powered by ZK CREATIONS</a></p>
+        </div>
+    </footer>
+</body>
+</html>

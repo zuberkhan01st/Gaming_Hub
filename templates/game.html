@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ game_name | capitalize }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ game_name | capitalize }}</h1>
+        <a href="{{ url_for('home') }}">Back to Home</a>
+    </header>
+
+    <!-- Game container where the game will be displayed -->
+    <div id="game-container">
+        <p>This is the {{ game_name }} game!</p>
+        <!-- Game-specific JavaScript can be loaded here -->
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

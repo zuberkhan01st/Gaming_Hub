@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6; /* Light gray background for softness */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333; /* Dark text for readability */
+}
+
+header {
+    background-color: #4A90E2; /* Blue header */
+    padding: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow for depth */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Increased spacing */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFC107; /* Yellow color on hover */
+}
+
+main {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Wider game cards */
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #fff; /* White background for cards */
+    border: 2px solid #4A90E2; /* Matching border color */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+}
+
+.game-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.game-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s; /* Smooth image transition */
+}
+
+.game-card:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.game-card h3 {
+    margin: 10px 0 5px;
+    text-align: center;
+    color: #4A90E2; /* Blue text for titles */
+}
+
+.game-card p {
+    text-align: center;
+    padding: 0 10px 10px;
+    color: #555; /* Slightly darker text for description */
+}
+
+.upcoming-games {
+    margin-top: 40px; /* Spacing above upcoming games section */
+    padding: 20px;
+    background-color: #e9f7fa; /* Light cyan background for contrast */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.upcoming-games h2 {
+    text-align: center;
+    color: #4A90E2; /* Consistent title color */
+}
+
+.upcoming-games ul {
+    list-style-type: none; /* No bullet points */
+    padding: 0;
+    text-align: center;
+}
+
+.upcoming-games li {
+    margin: 10px 0; /* Spacing between items */
+    font-weight: bold; /* Highlight upcoming games */
+}
+
+footer {
+    background-color: #4A90E2; /* Blue footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+footer p {
+    margin: 5px 0; /* Margin for footer text */
+}
+
+footer p:last-of-type {
+    position: absolute;
+    bottom: 10px; /* Aligns at the bottom of the footer */
+    right: 20px; /* Space from the right */
+    font-size: 0.9em; /* Smaller font for the brand */
+    opacity: 0.7; /* Slightly faded */
+    
+}
+
+

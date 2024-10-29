@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/breakout_game.css') }}">
+    <title>Breakout Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Breakout Game</h1>
+        <canvas id="gameCanvas" width="800" height="600"></canvas> <!-- Increased width and height -->
+        <div id="scoreDisplay">Score: 0</div>
+        <div id="messageDisplay"></div>
+        <div id="controls">
+            <button id="resetButton">Reset Game</button>
+            <label for="speedSelect">Speed:</label>
+            <select id="speedSelect">
+                <option value="1">1x</option>
+                <option value="2">2x</option>
+                <option value="4">4x</option>
+            </select>
+        </div>
+        <div id="gameOverModal" style="display: none;">
+            <div style="background-color: #fff; border: 2px solid #61dafb; padding: 20px; width: 300px; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <h2 id="modalMessage">Game Over</h2>
+                <button onclick="resetGame()">Play Again</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="{{ url_for('static', filename='js/breakout_game.js') }}"></script>
+</body>
+</html>
